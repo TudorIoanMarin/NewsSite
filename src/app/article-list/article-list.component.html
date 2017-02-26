@@ -1,0 +1,11 @@
+<div class="ui container">
+  <h1> Articles </h1>
+  <app-article-list-header>
+  </app-article-list-header>
+  <div class="ui devided items">
+    <app-article
+    *ngFor="let article of articles | async"
+    [article]="article"
+    class="item"></app-article>
+  </div>
+</div>
